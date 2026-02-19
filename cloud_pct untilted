@@ -1,0 +1,11 @@
+Humidity.innerHtml = response.Humidity
+Max_temp.innerHtml = response.Max_temp
+Min_temp.innerHtml = response.Min_temp
+Sunrise.innerHtml = response.Sunrise
+AirQuality.innerHtml = response.airQuality
+dewpoint_C.innerHtml = response.dewpoint_C
+Wind_degree.innerHtml = response.Wind_degree
+Wind_speed.innerHtml  = response.Wind_kph
+Feels_like.innerHtml = response.Feels_like
+
+

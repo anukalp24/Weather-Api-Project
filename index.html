@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="icon" type="image/png" href="weather img link.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <nav class="navbar">
+    <div class="nav-left">
+      <h2 id="a">Weather App</h2>
+    </div>
+      
+    
+    <form id="box" class="search-form">
+      <input id="input" type="search" placeholder="Enter location">
+      <button id="btn">Search</button>
+      
+      
+      <div id="error-box" class="error-box">
+        <div id="error" class="error">Enter location to continue.</div>
+        <div id="invalid-input">Location not found</div>
+          </div>
+        
+    </form>
+  </nav>
+
+  <main>
+    <div id="img-section" class="img-section">
+      <img  class="img"  id="cloudy" src="cloudy.png" alt="">
+      <img  class="img" id="rainy" src="rainy.png" alt="">
+      <img  class="img" id="sunny" src="sunny-new-img.png" alt="">
+      <img  class="img" id="mist" src="mist.png" alt="">
+      <img  class="img" id="rain-with-thunder" src="rainwiththunderstorm.png" alt="">
+      <img  class="img" id="snowfall" src="snow.png" alt="">
+      <li id="span"><span id="temp_c"></span>°C</li>
+      <div id="container" class="container">
+        <p class="weather-title">
+          Weather of: <span id="country"></span>
+        </p>
+      
+    </div>
+  </main>
+
+  
+  <div class="card-wrapper">
+      <div class="card">
+        <h3 id="bold">Current Conditions</h3>
+        <ul>
+          <li>Temperature: <span class="res" id="temp_c2"></span>°C</li>
+          <li>Feels Like: <span class="res" id="feelslike_c"></span>°C</li>
+          <li>Condition: <span class="res" id="condition"></span></li>
+        </ul>
+      </div>
+      
+
+      <div class="card">
+        <h3 id="bold">Atmospheric Details</h3>
+        <ul>
+          <li>Humidity: <span class="res" id="Humidity"></span></li>
+          <li>Air Quality: <span class="res" id="air_quality"></span></li>
+          <li>Dewpoint: <span class="res" id="dewpoint_c"></span>°C</li>
+        </ul>
+      </div>
+
+ 
+      <div class="card">
+        <h3 id="bold">Wind & Visibility</h3>
+        <ul>
+          <li>Wind Speed: <span class="res" id="wind_kph"></span>Kph</li>
+          <li>Visibility: <span class="res" id="vis_km"></span>Km</li>
+          <li>UV Index: <span class="res" id="uv"></span></li>
+        </ul>
+      </div>
+    </div>
+    
+      <script src="index.js"></script>
+    </body>
+    </html>
+
+
+    
