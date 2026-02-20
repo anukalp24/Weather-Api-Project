@@ -20,7 +20,6 @@ const api = async (city) => {
     response = await fetch(url);
   } catch (err) {
     invalid.style.display = "block";
-    // error.style.display = "none";
     invalid.innerHTML = "Unable to fetch weather data";
     return;
   }
