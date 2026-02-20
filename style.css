@@ -7,12 +7,15 @@
 
 body {
   color: #333;
-  background: #f1f4f5;
+ 
   background: #f8fafc;
 }
 
 .card {
-  background-color: rgb(255, 255, 255);
+   margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -248,12 +251,6 @@ img {
   margin: auto;
 }
 
-.card {
-  margin-top: 5vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
 
 #bold {
   text-decoration: underline;
@@ -266,7 +263,12 @@ img {
     padding: 15px;
     gap: 15px;
     text-align: center;
-  }
+    height: 32vh;
+  background: #f8fafc;
+  
+}
+    
+     
 
   #box {
     width: 77vw;
@@ -284,10 +286,12 @@ img {
   #btn,
   #input {
     width: 55vw;
+ box-shadow: 0 0.1px 1px rgba(0, 0, 0, 0.1);
   }
 
   #input {
     width: 56vw;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 
   .container {

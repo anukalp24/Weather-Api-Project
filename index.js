@@ -20,6 +20,7 @@ const api = async (city) => {
     response = await fetch(url);
   } catch (err) {
     invalid.style.display = "block";
+    // error.style.display = "none";
     invalid.innerHTML = "Unable to fetch weather data";
     return;
   }
@@ -61,7 +62,7 @@ const api = async (city) => {
 function checker() {
   if (input.value === "") {
     error.style.display = "block";
-    invalid.style.display = "none";
+    invalid.style.display = "none"
     return false;
   } else {
     error.style.display = "none";
@@ -100,6 +101,8 @@ function update(condition) {
 }
 
 function execution() {
+
+
   api(input.value);
 }
 
@@ -108,4 +111,10 @@ btn.addEventListener("click", (e) => {
   if (!checker()) return;
   execution();
 });
-api("india");
+
+let defaultt = function jj(){
+  api("india");
+}
+defaultt()
+
+  
