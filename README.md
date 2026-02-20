@@ -23,11 +23,3 @@ This app fetches real-time weather data from a Weather API and displays temperat
 👨‍💻 Author: Anukalp Agarwal
 
 
-
-
-
-
-
-
-Anukalp Agarwal
-
